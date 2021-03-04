@@ -3,7 +3,8 @@
 var count = 60; 
 var timer = document.getElementById('timer'); 
 var startTimer = document.querySelector('#startquiz') 
-startTimer.addEventListener("click",function(){ 
+startTimer.addEventListener("click",function(){
+  x();
     var interval = setInterval(function(){   
         document.getElementById('timer').innerHTML=count;   
         count--;   
@@ -11,12 +12,16 @@ startTimer.addEventListener("click",function(){
             clearInterval(interval);     
             document.getElementById('timer').innerHTML='Done';     
             // or...    
- alert("You're out of time!");   
-} }, 1000); 
-} )
+            alert("You're out of time!");   
+        } 
+    }, 1000); 
+})
+//displays questions to the HTML 
+function x (){
+    document.getElementById("questions").innerHTML = question[0].title;
+}
 
-
-//Created array for questions and answers for vairables. 
+//Created array for questions and answers for variables.
 var questionsEl = document.querySelector("#questions");
 
 let question = [
@@ -43,23 +48,9 @@ let question = [
 ]
 
 
-console.log(question);
+startTimer.addEventListener("click",function(){
 
-var currentQuestions = 0;
-function getNextQuestion (userChoice) {
-    var userQuestions = question[currentQuestions].answer; {
-    
-        if (userChoice===userQuestions) {
-            console.log("Correct!")
-        }
-        else {
-            console.log("Wrong Answer!")
-        }
-        getNextQuestion++
-    }
-
-
-}
+});
 
 //function showQuestion()
 /*
