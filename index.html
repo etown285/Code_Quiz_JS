@@ -8,9 +8,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p id="questions"></p>
+      <header>
+        <label id="timer" class="timeposition"></label>
+        <p><a>View High Scores</a></p>
+      </header>
+<section>
+    <h1>Coding Quiz on JavaScipt</h1>
+    <p id="quizquestions"></p>
+    <p class="gamedescription"></p>
     <button id='startquiz'> Start Quiz!</button>
-    <label id="timer"></label>
+    <label id="score" class="scoreposition"></label>
+</section> 
+<section id="quiz">
+    <div>
+        <div id="questionblock">
+            <h2 id="questions"></h2>
+            <ul id="answers">
+                <li id="answer1"></li>
+                <li id="answer2"></li>
+                <li id="answer3"></li>
+                <li id="answer4"></li>
+            </ul>
+            <p class="answertype"></p>
+        </div>
+    </div>
+</section>
     <script src="script.js"></script>
   </body>
 </html>
