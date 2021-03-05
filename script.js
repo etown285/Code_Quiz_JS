@@ -2,9 +2,11 @@
 //var timer = document.getElementById('timer');
 var count = 60; 
 var timer = document.getElementById('timer'); 
-var startTimer = document.querySelector('#startquiz') 
+var startTimer = document.querySelector('#startquiz')
+var answers = document.querySelectorAll('#answers li')
+
 startTimer.addEventListener("click",function(){
-  x();
+  userQuestions();
     var interval = setInterval(function(){   
         document.getElementById('timer').innerHTML=count;   
         count--;   
@@ -17,8 +19,12 @@ startTimer.addEventListener("click",function(){
     }, 1000); 
 })
 //displays questions to the HTML 
-function x (){
+
+function userQuestions (){
     document.getElementById("questions").innerHTML = question[0].title;
+         for (var i = 0; i < question[0].choices.length; i++){
+        answers[i].textContent = question[0].choices[i]
+    }
 }
 
 //Created array for questions and answers for variables.
@@ -45,37 +51,14 @@ let question = [
         choices: ["1992","1993","2000","1995"],
         answer: "1995"
     },
+    {
+        title : "When was Javascript created?", 
+        choices: ["1992","1993","2000","1995"],
+        answer: "1995"
+    },
 ]
 
 
 startTimer.addEventListener("click",function(){
 
 });
-
-//function showQuestion()
-/*
-var userQuestions = document.getElementById("questions");
-var userAnswers = document.getElementById("answers");
-function answersClicks() {
-    var a = document.getElementById("answer1");
-    var b = document.getElementById("answer2");
-    var c = document.getElementById("answer3");
-    var d = document.getElementById("answer4");
-
-    a.addEventListener("click", function());
-    b.addEventListener("click", function());
-    c.addEventListener("click", function());
-    d.addEventListener("click", function());
-}
-*/
-
-
-
-
-//If user selects the correct answer value is True and score is added to the display if user selects wrong answer the value is false and 10 seconds is deducted from the timer 
-
-//When user answers next questions is displayed 
-
-//When all questions are answered the total score is displayed 
-
-//User can log his intials with the high score score
