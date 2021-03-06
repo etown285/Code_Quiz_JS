@@ -7,32 +7,21 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-      <header>
-        <label id="timer" class="timeposition"></label>
-        <p><a>View High Scores</a></p>
-      </header>
-<section>
-    <h1>Coding Quiz on JavaScipt</h1>
-    <p id="question_title"></p>
-    <p class="gamedescription"></p>
-    <button id='startquiz'> Start Quiz!</button>
-    <label id="score" class="scoreposition"></label>
-</section> 
-<section id="quiz">
+<body>
+  <header>
+    <div id="timer">60</div>
+  </header>
+  <section>
+    <h1>Welcome to the Javascript Quiz!</h1>
+    <button id="startquiz">Start the Quiz!</button>
+    <h3 id = "question"></h3>
     <div>
-        <div id="questionblock">
-            <h2 id="questions"></h2>
-            <ul id="answers">
-                <li id="answer1"></li>
-                <li id="answer2"></li>
-                <li id="answer3"></li>
-                <li id="answer4"></li>
-            </ul>
-            <p class="answertype"></p>
-        </div>
+      <div id = "choice1"></div>
+      <div id = "choice2"></div>
+      <div id = "choice3"></div>
+      <div id = "choice4"></div>
     </div>
-</section>
-    <script src="script.js"></script>
-  </body>
-</html>
+    <div><span id="score">0</span>/100</div>
+  </section>
+  <script src="script.js"></script>
+</body>
