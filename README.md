@@ -1,12 +1,17 @@
 # Code_Quiz_JS
-Creating a times quiz with Javascript. 
-# Code-Refractor
+Creating a timed quiz with Javascript where user can store their scores. 
 
 ## Description 
 
-* Created global variables for each section of the quiz. 
-* Created an array for the questions and answers for the user. 
-* Created timer that starts when the first questions is displayed. 
+* Created global variables for all if the inner html elements. 
+* Created and array for each of the user questions. 
+* Created timer that starts when the first questions is displayed.
+* Created and EventListener for when the quiz starts the timer begin and first questions is displayed. 
+* Prompt that tells user if he has answered the question correct or incorrectly. 
+* Within the function created statement to add points if the user is correct and subract time if the user is incorrect. 
+* Created local storage for user to track previous score when they refresh and to try quiz again. 
+* Used bootstrap to style both sections of the page and high scores. 
+* Creates style sheet to correct page margins. 
 
 ## Usage  
 
@@ -14,8 +19,8 @@ Creating a times quiz with Javascript.
 
 ## Links 
 
-* Application URL: 
-* GitHub Repository URL:
+* Application URL: https://etown285.github.io/Code_Quiz_JS/
+* GitHub Repository URL: https://github.com/etown285/Code_Quiz_JS
 
 ## Resources 
 
@@ -24,6 +29,7 @@ Creating a times quiz with Javascript.
 ## Credits
 
 * Takuya Matsumoto: [https://github.com/TakuyaMats]
+* Brian Adams: [https://github.com/thebadams/]
 
 ## License
 

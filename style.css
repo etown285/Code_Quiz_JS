@@ -1,7 +1,4 @@
-header .timeposition { 
-    margin-top: -0.2em;
-    font-weight: italic;
-    letter-spacing: -0.02em;
-    color: black;
-    align-content: right;
+body {
+    align-content: center;
+    padding: 2em;
 }
