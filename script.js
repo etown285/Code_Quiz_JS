@@ -52,7 +52,7 @@ var data = [
             a:"WHERE/WHEN",
             b:"WHY/AM",
             c:"TRUE/FALSE",
-            d:"1995",
+            d:"IF/HOW",
         },
         key: "c",
     },
@@ -69,10 +69,10 @@ var data = [
     {
         question: "How to add JavaScript to HTML?",
         answers: {
-            a:"<html = script.js>",
-            b:"<js src=script.js><js>",
-            c:"<script src=script.js><script>",
-            d:"<stylesheet.js><stylesheet.js>",
+            a:"html = script.js",
+            b:"js = src=script.js",
+            c:"src=script.js",
+            d:"stylesheet.js",
         },
         key: "c",
     },
