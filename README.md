@@ -15,7 +15,7 @@ Creating a timed quiz with Javascript where user can store their scores.
 
 ## Usage  
 
-![Screenshot]
+![Screenshot](https://github.com/etown285/Code_Quiz_JS/blob/main/screenshot/Screenshot_Code_Quiz.png)
 
 ## Links 
 
